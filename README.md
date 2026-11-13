@@ -1,18 +1,18 @@
-# syncuro-models
+# steerwise-models
 
-Modelli 3D dei veicoli per l'app Syncuro, serviti via
+Modelli 3D dei veicoli per l'app Steerwise, serviti via
 [jsDelivr](https://www.jsdelivr.com).
 
 ## Come li legge l'app
 
 1. `index.json` (da `main`) indica la versione corrente del catalogo:
-   `https://raw.githubusercontent.com/Davencode/syncuro-models/main/index.json`.
+   `https://raw.githubusercontent.com/Davencode/steerwise-models/main/index.json`.
    Non passa da jsDelivr: per un branch jsDelivr tiene in cache il commit per
    ore, anche dopo un purge, e l'app vedrebbe la versione vecchia.
 2. Il catalogo di quella versione:
-   `https://cdn.jsdelivr.net/gh/Davencode/syncuro-models@<tag>/catalog.json`
+   `https://cdn.jsdelivr.net/gh/Davencode/steerwise-models@<tag>/catalog.json`
 3. Solo il modello dell'auto dell'utente:
-   `https://cdn.jsdelivr.net/gh/Davencode/syncuro-models@<tag>/models/<file>.glb`
+   `https://cdn.jsdelivr.net/gh/Davencode/steerwise-models@<tag>/models/<file>.glb`
 
 L'app tiene in cache catalogo e modelli. Senza rete usa l'ultima versione
 nota. Pubblicando una nuova versione, gli utenti la ricevono senza

@@ -362,7 +362,7 @@ def to_meters(src, dst):
     json_length = struct.unpack_from('<I', data, 12)[0]
     gltf = json.loads(data[20:20 + json_length])
     scene = gltf['scenes'][gltf.get('scene', 0)]
-    gltf['nodes'].append({'name': 'syncuro_root', 'children': scene['nodes'], 'scale': [scale] * 3,
+    gltf['nodes'].append({'name': 'steerwise_root', 'children': scene['nodes'], 'scale': [scale] * 3,
                           'translation': [-cx * scale, -lo[1] * scale, -cz * scale]})
     scene['nodes'] = [len(gltf['nodes']) - 1]
     chunk = json.dumps(gltf, separators=(',', ':')).encode()

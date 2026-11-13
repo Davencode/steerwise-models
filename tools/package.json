@@ -1,5 +1,5 @@
 {
-  "name": "syncuro-models-tools",
+  "name": "steerwise-models-tools",
   "private": true,
   "type": "module",
   "description": "Strumenti per preparare i modelli 3D (vedi README).",
